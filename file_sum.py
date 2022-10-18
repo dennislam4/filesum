@@ -8,7 +8,7 @@ def file_sum(numberlist):
     """Sums values in file and writes sum to sum.txt file"""
 
     sums = 0
-    with open('numberlist.txt', 'r') as infile:
+    with open(numberlist, 'r') as infile:
         for numbers in infile:
             sums += float(numbers)
     with open('sum.txt', 'w') as outfile:
